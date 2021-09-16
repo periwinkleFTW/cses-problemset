@@ -3,18 +3,13 @@ def main():
 
     if n == 1:
         print(n)
-    elif n == 2 or n == 3:
+    elif n < 4:
         print('NO SOLUTION')
     else:
-        a = []
-        for num in range(n):
-            if num % 2 == 0:
-                a.append(num)
-        for num in range(n):
-            if num % 2 != 0:
-                a.append(num)
-
-        print(a)
+        for num in range(2, n+1, 2):
+            print(num)
+        for num in range(1,n+1,2):
+            print(num)
         
 
 if __name__ == '__main__':
